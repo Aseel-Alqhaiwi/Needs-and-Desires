@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>لعبة الحاجات والرغبات</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>لعبة الحاجات والرغبات</h1>
+      <p class="intro">
+        لديك 20 جملة. اختر ما إذا كانت تمثل <strong>احتياجًا</strong> أم
+        <strong>رغبة</strong>. بعد كل اختيار ستظهر لك الإجابة الصحيحة.
+      </p>
+      <section id="setup">
+        <button id="startBtn" class="primary">ابدأ اللعبة</button>
+      </section>
+      <section id="game" hidden>
+        <div class="status">
+          <p id="progress">السؤال 1 من 20</p>
+          <p id="score">النتيجة: 0</p>
+        </div>
+        <div class="card">
+          <p id="statement">—</p>
+        </div>
+        <div class="controls">
+          <button id="needBtn" class="secondary">احتياج</button>
+          <button id="wantBtn" class="secondary">رغبة</button>
+        </div>
+        <p id="feedback" aria-live="polite"></p>
+        <button id="nextBtn" class="primary" hidden>التالي</button>
+      </section>
+      <section id="results" hidden>
+        <h2>أحسنت!</h2>
+        <p id="finalScore"></p>
+        <button id="restartBtn" class="primary">إعادة اللعب</button>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
